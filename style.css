@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-text {
+  color: rgb(202, 66, 89);
+  font-size: 3rem;
+}
+.gallery-section {
+  text-align: center;
+  position: relative;
+  top: 4rem;
+}
+
+.image-section {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 8rem;
+  border-radius: 2rem;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+}
+.active {
+  width: 20rem;
+  opacity: 1;
+  position: relative;
+
+  box-shadow: 0.3rem 0.4rem 3rem 1rem rgb(27, 73, 58);
+  position: relative;
+}
+.active:hover .text{
+  display:block;
+}
+ p {
+  display: none;
+  color:white;
+ left:9vw;
+  font-size:1.4rem;
+  position:absolute;
+  top:34vw;
+}
+.circles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
+  background: linear-gradient(red, rgb(116, 223, 223));
+  border-radius: 50%;
+  border-bottom-right-radius: 0;
+
+  animation: move 3s linear infinite;
+  animation-direction: alternate-reverse;
+  position:relative;
+  top:1rem;
+}
+@keyframes move {
+ 0% {
+transform: translate(0vw);
+  }
+100% {
+    transform: translate(4vw);
+  }
+}
+
+.i1 {
+  background-image: url("https://i.pinimg.com/originals/a4/96/c2/a496c2b6bc5d7cfe0e0674f6598c38ad.jpg");
+}
+.i2 {
+  background-image: url("https://wallpapers.com/images/hd/river-and-trees-nature-227nqf2r0aa2xguq.jpg");
+}
+.i3 {
+  background-image: url("https://www.teahub.io/photos/full/0-7870_nature-hd-landscape.jpg");
+}
+.i4 {
+  background-image: url("https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg");
+}
+.i5 {
+  background-image: url("https://img.freepik.com/premium-photo/sunrise-northern-chiang-rai-thailand_130181-71.jpg?size=626&ext=jpg&ga=GA1.2.1690900967.1673701865");
+}
+.i6 {
+  background-image: url("https://img.freepik.com/free-photo/breathtaking-shot-beautiful-stones-turquoise-water-lake-hills-background_181624-12847.jpg?size=626&ext=jpg&ga=GA1.2.1690900967.1673701865");
+}
